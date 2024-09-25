@@ -24,4 +24,134 @@ Les plateformes CI modernes s'intégrent directement avec Git :
 
 - GitHub Actions : Se déclenche automatiquement à chaque commit ou pull request sur GitHub.
 - GitLab CI : Intégré directement dans GitLab, chaque dépôt dispose d'un pipeline CI associé.
-- Jenkins : Peut surveiller les dépôts Git et lancer des jobs de CI à chaque modification.
+- Jenkins : Peut surveiller les dépôts Git et lancer des jobs de CI à chaque modification.### 7.3 Gestion des conflits
+
+# Gestion des Conflits Git - Cheat Sheet
+
+Les conflits Git se produisent lorsque des modifications concurrentes sont effectuées sur les mêmes lignes d'un fichier ou lorsqu'un fichier est supprimé dans une branche et modifié dans une autre. Ce cheat sheet fournit un guide rapide pour identifier, résoudre et prévenir les conflits Git.
+
+---
+
+## Sommaire
+
+- [Identification des Conflits](#identification-des-conflits)
+- [Visualisation des Fichiers en Conflit](#visualisation-des-fichiers-en-conflit)
+- [Résolution des Conflits](#résolution-des-conflits)
+- [Abandonner une Opération en Cours](#abandonner-une-opération-en-cours)
+- [Utilisation d'Outils de Fusion](#utilisation-doutils-de-fusion)
+- [Prévention des Conflits](#prévention-des-conflits)
+- [Commandes Utiles](#commandes-utiles)
+- [Astuces](#astuces)
+
+---
+
+## Identification des Conflits
+
+Lors d'une opération `git merge`, `git rebase` ou `git cherry-pick`, Git peut signaler des conflits :
+
+```bash
+$ git pull
+Auto-merging fichier.txt
+CONFLICT (content): Merge conflict in fichier.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+## Visualisation des Fichiers en Conflit
+
+Liste des fichiers en conflit :
+
+```bash
+$ git status
+```
+
+Les fichiers en conflit apparaîtront sous la section **"Unmerged paths"**.
+
+## Résolution des Conflits
+
+1. **Ouvrir les fichiers en conflit** : Les marqueurs de conflit ressemblent à ceci :
+
+   ```diff
+   <<<<<<< HEAD
+   Contenu de la branche actuelle.
+   =======
+   Contenu de la branche fusionnée.
+   >>>>>>> nom-de-la-branche
+   ```
+
+2. **Éditer les fichiers** : Choisissez quelles modifications conserver ou combinez-les.
+
+3. **Marquer les conflits comme résolus** :
+
+   ```bash
+   $ git add fichier.txt
+   ```
+
+4. **Valider les modifications** :
+
+   ```bash
+   $ git commit -m "Résolution des conflits sur fichier.txt"
+   ```
+
+## Abandonner une Opération en Cours
+
+- **Annuler une fusion** :
+
+  ```bash
+  $ git merge --abort
+  ```
+
+- **Annuler un rebase** :
+
+  ```bash
+  $ git rebase --abort
+  ```
+
+## Utilisation d'Outils de Fusion
+
+Configurer un outil de fusion (par exemple, Meld) :
+
+```bash
+$ git config --global merge.tool meld
+$ git config --global mergetool.meld.path "/chemin/vers/meld"
+```
+
+Utiliser l'outil de fusion :
+
+```bash
+$ git mergetool
+```
+
+## Prévention des Conflits
+
+- **Communication d'équipe** : Informez-vous mutuellement des modifications majeures.
+- **Mises à jour fréquentes** : Intégrez régulièrement les changements de la branche principale.
+- **Branches de fonctionnalité** : Isolez les travaux en cours pour minimiser les conflits.
+
+## Commandes Utiles
+
+- **Voir les conflits restants** :
+
+  ```bash
+  $ git diff --name-only --diff-filter=U
+  ```
+
+- **Afficher les différences** :
+
+  ```bash
+  $ git diff
+  ```
+
+- **Afficher les marqueurs de conflit** :
+
+  ```bash
+  $ git diff --merge
+  ```
+
+## Astuces
+
+- **Commits atomiques** : Des commits petits et spécifiques facilitent la résolution des conflits.
+- **Utiliser `git stash`** : Avant de tirer des changements, sauvegardez vos modifications en cours.
+
+---
+
+**Note** : Ce cheat sheet est un guide rapide. Pour des situations complexes, consultez la [documentation officielle de Git](https://git-scm.com/docs).
