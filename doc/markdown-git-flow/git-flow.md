@@ -1,9 +1,9 @@
-# Git Flow : Workflow avancé de gestion des branches
+# 10. Git Flow : Workflow avancé de gestion des branches
 
-## 1. Introduction à Git Flow
+## 10.1. Introduction à Git Flow
 Git Flow est une méthodologie de gestion de branches conçue pour organiser le développement logiciel de manière claire et structurée. Elle est particulièrement adaptée aux projets avec plusieurs contributeurs et des versions régulières. Git Flow propose plusieurs types de branches pour différents rôles dans le cycle de développement : développement de fonctionnalités, préparation des versions, correctifs urgents, etc.
 
-## 2. Installation de Git Flow
+## 10.2. Installation de Git Flow
 
 #### Sur macOS :
 Installez Git Flow via Homebrew :
@@ -25,7 +25,7 @@ Git Flow peut être installé via **Git for Windows** ou **Scoop** :
   scoop install git-flow
   ```
 
-## 3. Initialisation de Git Flow
+## 10.3. Initialisation de Git Flow
 Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt Git existant. Cette étape configure les branches principales (`main` et `develop`) et définit les conventions de nommage pour les autres types de branches.
 
 - **Initialiser Git Flow** :
@@ -34,7 +34,7 @@ Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt
   ```
   Lors de l'initialisation, Git Flow vous demandera de confirmer les noms des branches (`main`, `develop`, etc.) et vous proposera des valeurs par défaut que vous pouvez accepter ou personnaliser.
 
-## 4. Les branches principales dans Git Flow
+## 10.4. Les branches principales dans Git Flow
 
 1. **`main` (ou `master`)** :  
    Cette branche contient le code en production, qui doit toujours être stable. Les nouvelles versions sont fusionnées dans `main` via des branches de release ou de hotfix.
@@ -42,7 +42,7 @@ Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt
 2. **`develop`** :  
    Cette branche est utilisée pour intégrer toutes les nouvelles fonctionnalités. C'est l'environnement où le code est testé avant d'être prêt pour la production.
 
-## 5. Les branches de support
+## 10.5. Les branches de support
 
 1. **Feature branches** (`feature/`) :
    - Utilisées pour le développement de nouvelles fonctionnalités.
@@ -109,7 +109,7 @@ Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt
 
     ---
 
-## 6. Utilisation des commandes Git Flow
+## 10.6. Utilisation des commandes Git Flow
 
 Git Flow propose des commandes qui simplifient la gestion des branches. Voici les principales commandes disponibles après l'initialisation de Git Flow :
 
@@ -143,13 +143,13 @@ Git Flow propose des commandes qui simplifient la gestion des branches. Voici le
   git flow hotfix finish <nom_hotfix>
   ```
 
-## 7. Avantages de Git Flow
+## 10.7. Avantages de Git Flow
 
 - **Organisation claire** : Les branches sont bien définies, chaque type de branche ayant un objectif précis. Cela permet une séparation nette des différentes phases de développement (fonctionnalités, correctifs, versions).
 - **Gestion des versions** : Grâce aux branches de release et aux tags, la gestion des versions devient simple et structurée, facilitant les déploiements.
 - **Travailler en parallèle** : Git Flow permet de développer plusieurs fonctionnalités et de résoudre des bugs simultanément sans affecter la stabilité du projet en production.
 
-## 8. Limites de Git Flow
+## 10.8. Limites de Git Flow
 
 - **Complexité pour les petits projets** : Pour les petits projets avec des équipes réduites, Git Flow peut sembler lourd et trop complexe. Dans ces cas, un workflow plus simple comme GitHub Flow peut suffire.
 - **Non adapté au Continuous Delivery** : Si vous utilisez une méthodologie de déploiement continu, où chaque commit est potentiellement déployé en production, Git Flow peut ne pas être optimal. Un workflow plus léger, sans les branches de release, pourrait être préférable.

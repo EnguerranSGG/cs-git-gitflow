@@ -61,9 +61,19 @@ Brève description
    - [9.5. Ressources et documentation officielle Git](./doc/markdown-git/9-ressources.md)
    - [9.6. Cours et tutoriels en ligne sur Git](./doc/markdown-git/9-ressources.md)
 
+## 10. Git Flow : Workflow avancé de gestion des branches
+   - [10.1. Introduction à Git Flow](./doc/markdown-git-flow/git-flow.md)
+   - [10.2. Installation de Git Flow](./doc/markdown-git-flow/git-flow.md)
+   - [10.3. Initialisation de Git Flow](./doc/markdown-git-flow/git-flow.md)
+   - [10.4. Les branches principales dans Git Flow](./doc/markdown-git-flow/git-flow.md)
+   - [10.5. Les branches de support](./doc/markdown-git-flow/git-flow.md)
+   - [10.6. Utilisation des commandes Git Flow](./doc/markdown-git-flow/git-flow.md)
+   - [10.7. Avantages de Git Flow](./doc/markdown-git-flow/git-flow.md)
+   - [10.8. Limites de Git Flow](./doc/markdown-git-flow/git-flow.md)
+   
 ## Project Description
 
-Ce dépôt est une structure permettant de démarrer un projet professionnel ou personnel. Ceci vous fera gagner un temps précieux et maximiser votre temps de travail.
+Ce document sert de guide rapide pour comprendre et utiliser Git et GitFlow efficacement. Que vous soyez un développeur débutant cherchant à se familiariser avec les concepts fondamentaux ou un utilisateur expérimenté souhaitant renforcer ses compétences, cette cheat sheet couvre une large gamme de sujets pertinents. 
 
 ## About The Project
 
