@@ -14,7 +14,7 @@ Si la compilation ou les tests ne fonctionnent pas, l'outil de CI va le notifier
 
 #### 7.2.2. L'interaction entre la CI et Git
 
-Dans la pratique CI, il est recommandé d'intégrer fréquement les modifictions dans une branche principale. Grâce au fonctionnement par branche de Git, le développement va être isolé jusqu'à ce que les modifications soient prêtent à être fusionnées via, une PR par exemple.git
+Dans la pratique CI, il est recommandé d'intégrer fréquement les modifictions dans une branche principale. Grâce au fonctionnement par branche de Git, le développement va être isolé jusqu'à ce que les modifications soient prêtent à être fusionnées via, une PR par exemple.
 
 Avant que la branche de développement ne fusionne avec la principale, l'outil de CI va être appelé pour procéder aux tests comme expliqué un peu plus haut. S'il y a le moindre problème, Git va refuser la fusion tant qu'il ne sera pas résolu.
 
