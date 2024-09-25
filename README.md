@@ -1,4 +1,4 @@
-# Project name
+# CHEAT SHEET GIT/GITFLOW
 
 Brève description
 
@@ -9,9 +9,9 @@ Brève description
    - [1.4. Différence entre Git et GitHub](./doc/markdown-git/1-presentation.md)
 
 ## 2. Installation et configuration de Git
-   - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/2-config.md)
-   - [2.2. Configuration initiale de Git (`git config`)](./doc/markdown-git/2-config.md)
-   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/2-config.md)
+   - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/2-installation-config.md)
+   - [2.2. Configuration initiale de Git (`git config`)](./doc/markdown-git/2-installation-config.md)
+   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/2-installation-config.md)
 
 ## 3. Les bases de Git
    - [3.1. Initialiser un dépôt Git (`git init`)](./doc/markdown-git/3-base.md)
@@ -54,12 +54,12 @@ Brève description
    - [8.4. Sauvegarde et restauration de projets Git](./doc/markdown-git/8-depannage-recuperation.md)
 
 ## 9. Ressources et outils supplémentaires
-   - [9.1. Alias Git : Simplifier l'utilisation des commandes Git](#/README.md)
-   - [9.2. Utiliser Git avec un IDE (VSCode, IntelliJ, etc.)](#/README.md)
-   - [9.3. Outils de visualisation de Git (`gitk`, `git log --graph`)](#/README.md)
-   - [9.4. Outils d'intégration continue et Git (Jenkins, Travis CI, CircleCI)](#/README.md)
-   - [9.5. Ressources et documentation officielle Git](#/README.md)
-   - [9.6. Cours et tutoriels en ligne sur Git](#/README.md)
+   - [9.1. Alias Git : Simplifier l'utilisation des commandes Git](./doc/markdown-git/9-ressources.md)
+   - [9.2. Utiliser Git avec un IDE (VSCode, IntelliJ, etc.)](./doc/markdown-git/9-ressources.md)
+   - [9.3. Outils de visualisation de Git (`gitk`, `git log --graph`)](./doc/markdown-git/9-ressources.md)
+   - [9.4. Outils d'intégration continue et Git (Jenkins, Travis CI, CircleCI)](./doc/markdown-git/9-ressources.md)
+   - [9.5. Ressources et documentation officielle Git](./doc/markdown-git/9-ressources.md)
+   - [9.6. Cours et tutoriels en ligne sur Git](./doc/markdown-git/9-ressources.md)
 
 ## Project Description
 
@@ -75,6 +75,23 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 
 ## Author
 
+#### Ayoub Laroussi
+- **Role**: Tech lead
+- **GitHub**: [Ayoub Laroussi](https://github.com/EyeOne2-0)
+
+#### Messaoud Houri
+- **Role**: Developer
+- **GitHub**: [Messaoud Houri](https://github.com/MessaKami)
+
+#### Enguerran Smagghe
+- **Role**: Developer
+- **GitHub**: [Enguerran Smagghe](https://github.com/EnguerranSGG)
+
+#### Justin Didelot
+- **Role**: Developer
+- **GitHub**: [Justin Didelot](https://github.com/Srekaens)
+
+---
 ## License
 
 Distributed under the MIT License. `LICENSE` See for more information.
